@@ -1,0 +1,26 @@
+{
+  "name": "common-dir",
+  "author": "Lloyd Brookes <75pound@gmail.com>",
+  "version": "0.0.0",
+  "description": "returns the parent directory common to each path in the list",
+  "repository": "https://github.com/75lb/common-dir.git",
+  "main": "./lib/common-dir.js",
+  "bin": {
+    "common-dir": "bin/cli.js"
+  },
+  "keywords": [ "common", "directory", "parent", "folder" ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "lint": "jshint lib/*.js test/*.js; echo",
+    "docs": "jsdoc2md -t jsdoc2md/README.hbs lib/*.js > README.md; echo"
+  },
+  "dependencies": {
+    "wodge": "^0.8.1"
+  },
+  "devDependencies": {
+    "tape": "^2.13.2"
+  }
+}
