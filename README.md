@@ -10,18 +10,13 @@ commonDir returns the parent directory common to each path in the list
 ####Example
 ```js
 > var commonDir = require("common-dir");
-> files = fs.readdirSync(".").map(function(file){ return path.resolve(file); })
-[ '/Users/Lloyd/Documents/75lb/wodge/.DS_Store',
-  '/Users/Lloyd/Documents/75lb/wodge/.git',
-  '/Users/Lloyd/Documents/75lb/wodge/.gitignore',
-  '/Users/Lloyd/Documents/75lb/wodge/.jshintrc',
-  '/Users/Lloyd/Documents/75lb/wodge/README.md',
-  '/Users/Lloyd/Documents/75lb/wodge/lib',
-  '/Users/Lloyd/Documents/75lb/wodge/node_modules',
-  '/Users/Lloyd/Documents/75lb/wodge/package.json',
-  '/Users/Lloyd/Documents/75lb/wodge/test' ]
+> files = [ 
+  '/Users/75lb/one/package.json',
+  '/Users/75lb/one/test',
+  '/Users/75lb/two/test/main.js'     
+]
 > commonDir(files)
-'/Users/Lloyd/Documents/75lb/wodge/'
+'/Users/75lb/'
 ```
 
 
