@@ -1,14 +1,19 @@
 {
   "name": "common-dir",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "returns the parent directory common to each path in the list",
   "repository": "https://github.com/75lb/common-dir.git",
   "main": "./lib/common-dir.js",
   "bin": {
     "common-dir": "bin/cli.js"
   },
-  "keywords": [ "common", "directory", "parent", "folder" ],
+  "keywords": [
+    "common",
+    "directory",
+    "parent",
+    "folder"
+  ],
   "engines": {
     "node": ">=0.10.0"
   },
