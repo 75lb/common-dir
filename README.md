@@ -13,7 +13,7 @@ commonDir returns the parent directory common to each path in the list
 - files `Array` - An array of file paths to inspect
 
   
-**Returns**: `string` - - A single path ending with the path separator, e.g. "/user/some/folder/"  
+**Returns**: `string` - A single path ending with the path separator, e.g. "/user/some/folder/"  
 **Example**  
 ```js
 > var commonDir = require("common-dir");
