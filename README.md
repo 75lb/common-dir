@@ -3,11 +3,18 @@
 [![Build Status](https://travis-ci.org/75lb/common-dir.svg?branch=master)](https://travis-ci.org/75lb/common-dir)
 [![Dependency Status](https://david-dm.org/75lb/common-dir.svg)](https://david-dm.org/75lb/common-dir)
 
+<a name="module_common-dir"></a>
+##common-dir(files)
 
-#common-dir
 commonDir returns the parent directory common to each path in the list
 
-####Example
+**Params**
+
+- files `Array` - An array of file paths to inspect
+
+  
+**Returns**: `string` - - A single path ending with the path separator, e.g. "/user/some/folder/"  
+**Example**  
 ```js
 > var commonDir = require("common-dir");
 > files = [ 
@@ -18,19 +25,4 @@ commonDir returns the parent directory common to each path in the list
 > commonDir(files)
 '/Users/75lb/'
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
