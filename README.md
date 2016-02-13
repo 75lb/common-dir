@@ -6,12 +6,12 @@
 
 <a name="module_common-dir"></a>
 ## common-dir
-<a name="module_common-dir..commonDir"></a>
-### common-dir~commonDir(files) ⇒ <code>string</code>
+<a name="exp_module_common-dir--commonDir"></a>
+### commonDir(files) ⇒ <code>string</code> ⏏
 commonDir returns the parent directory common to each path in the list
 
-**Kind**: inner method of <code>[common-dir](#module_common-dir)</code>  
-**Returns**: <code>string</code> - A single path ending with the path separator, e.g. "/user/some/folder/"  
+**Kind**: Exported function  
+**Returns**: <code>string</code> - A single path ending with the path separator, e.g. '/user/some/folder/'  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -19,7 +19,7 @@ commonDir returns the parent directory common to each path in the list
 
 **Example**  
 ```js
-> var commonDir = require("common-dir")
+> var commonDir = require('common-dir')
 > files = [
   '/Users/75lb/one/package.json',
   '/Users/75lb/one/test',
