@@ -5,8 +5,10 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 <a name="module_common-dir"></a>
+
 ## common-dir
 <a name="exp_module_common-dir--commonDir"></a>
+
 ### commonDir(files) ⇒ <code>string</code> ⏏
 commonDir returns the parent directory common to each path in the list
 
@@ -31,4 +33,4 @@ commonDir returns the parent directory common to each path in the list
 
 * * *
 
-&copy; 2015 Lloyd Brookes <75pound@gmail.com>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2014-16 Lloyd Brookes <75pound@gmail.com>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
