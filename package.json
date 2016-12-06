@@ -1,7 +1,7 @@
 {
   "name": "common-dir",
   "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "returns the parent directory common to each path in the list",
   "repository": "https://github.com/75lb/common-dir.git",
   "main": "./lib/common-dir.js",
