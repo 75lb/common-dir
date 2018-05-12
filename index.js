@@ -8,7 +8,7 @@ const path = require('path')
 module.exports = commonDir
 
 /**
- * commonDir returns the parent directory common to each path in the list
+ * Returns the parent directory common to each path.
  * @param {Array} files - An array of file paths to inspect
  * @returns {string} A single path ending with the path separator, e.g. '/user/some/folder/'
  * @alias module:common-dir

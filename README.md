@@ -10,7 +10,7 @@
 <a name="exp_module_common-dir--commonDir"></a>
 
 ### commonDir(files) ⇒ <code>string</code> ⏏
-commonDir returns the parent directory common to each path in the list
+Returns the parent directory common to each path.
 
 **Kind**: Exported function  
 **Returns**: <code>string</code> - A single path ending with the path separator, e.g. '/user/some/folder/'  
