@@ -1,5 +1,5 @@
 [![view on npm](http://img.shields.io/npm/v/common-dir.svg)](https://www.npmjs.org/package/common-dir)
-[![npm module downloads per month](http://img.shields.io/npm/dm/common-dir.svg)](https://www.npmjs.org/package/common-dir)
+[![npm module downloads](http://img.shields.io/npm/dt/common-dir.svg)](https://www.npmjs.org/package/common-dir)
 [![Build Status](https://travis-ci.org/75lb/common-dir.svg?branch=master)](https://travis-ci.org/75lb/common-dir)
 [![Dependency Status](https://david-dm.org/75lb/common-dir.svg)](https://david-dm.org/75lb/common-dir)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
@@ -21,7 +21,7 @@ commonDir returns the parent directory common to each path in the list
 
 **Example**  
 ```js
-> var commonDir = require('common-dir')
+> const commonDir = require('common-dir')
 > files = [
   '/Users/75lb/one/package.json',
   '/Users/75lb/one/test',
@@ -33,4 +33,4 @@ commonDir returns the parent directory common to each path in the list
 
 * * *
 
-&copy; 2014-16 Lloyd Brookes <75pound@gmail.com>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2014-18 Lloyd Brookes <75pound@gmail.com>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).

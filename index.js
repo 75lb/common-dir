@@ -1,6 +1,6 @@
 'use strict'
-var commonSequence = require('common-sequence')
-var path = require('path')
+const commonSequence = require('common-sequence')
+const path = require('path')
 
 /**
  * @module common-dir
@@ -13,7 +13,7 @@ module.exports = commonDir
  * @returns {string} A single path ending with the path separator, e.g. '/user/some/folder/'
  * @alias module:common-dir
  * @example
- * > var commonDir = require('common-dir')
+ * > const commonDir = require('common-dir')
  * > files = [
  *   '/Users/75lb/one/package.json',
  *   '/Users/75lb/one/test',

@@ -1,13 +1,13 @@
-var TestRunner = require('test-runner')
-var os = require('os')
-var commonDir = require('../')
-var a = require('core-assert')
+const TestRunner = require('test-runner')
+const os = require('os')
+const commonDir = require('./')
+const a = require('assert')
 
-var runner = new TestRunner()
+const runner = new TestRunner()
 
 if (os.platform() === 'win32') {
   runner.test('commonDir: simple (win)', function (t) {
-    var input = [
+    const input = [
       'C:\\Users\\IEUser\\Documents\\GitHub\\wodge',
       'C:\\Users\\IEUser\\Documents\\GitHub\\wodge\\folder',
       'C:\\Users\\IEUser\\Documents\\GitHub\\wodge\\folder\\five',
@@ -17,7 +17,7 @@ if (os.platform() === 'win32') {
   })
 
   runner.test('commonDir: wildly diff folders (win)', function (t) {
-    var input = [
+    const input = [
       'C:\\this\\that',
       'C:\\another\\something',
       'C:\\andagain\\different'
@@ -26,7 +26,7 @@ if (os.platform() === 'win32') {
   })
 
   runner.test('commonDir: just one (win)', function (t) {
-    var input = [
+    const input = [
       'C:\\Users\\Lloyd\\Documents\\LEGO Creations\\MINDSTORMS EV3 Projects\\Randomness.ev3'
     ]
     a.strictEqual(commonDir(input), 'C:\\Users\\Lloyd\\Documents\\LEGO Creations\\MINDSTORMS EV3 Projects\\')
@@ -34,7 +34,7 @@ if (os.platform() === 'win32') {
 
 } else {
   runner.test('commonDir: simple', function (t) {
-    var input = [
+    const input = [
       '/Users/Lloyd/Documents/Kunai/renamer/one',
       '/Users/Lloyd/Documents/Kunai/renamer/folder/folder/five',
       '/Users/Lloyd/Documents/Kunai/renamer/folder/four',
@@ -47,12 +47,12 @@ if (os.platform() === 'win32') {
   })
 
   runner.test('commonDir: wildly diff folders', function (t) {
-    var input = [ '/this/that', '/another/something', '/andagain/different' ]
+    const input = [ '/this/that', '/another/something', '/andagain/different' ]
     a.strictEqual(commonDir(input), '/')
   })
 
   runner.test('commonDir: another', function (t) {
-    var input = [
+    const input = [
       '/Users/Lloyd/Documents/LEGO Creations/MINDSTORMS EV3 Projects/Randomness.ev3',
       '/Users/Lloyd/Desktop/Screen Shot 2014-03-27 at 10.00.12.png'
     ]
@@ -60,14 +60,14 @@ if (os.platform() === 'win32') {
   })
 
   runner.test('commonDir: just one', function (t) {
-    var input = [
+    const input = [
       '/Users/Lloyd/Documents/LEGO Creations/MINDSTORMS EV3 Projects/Randomness.ev3'
     ]
     a.strictEqual(commonDir(input), '/Users/Lloyd/Documents/LEGO Creations/MINDSTORMS EV3 Projects/')
   })
 
   runner.test('commonDir: all same folder', function (t) {
-    var input = [
+    const input = [
       '/Users/Lloyd/Documents/Kunai/renamer/one',
       '/Users/Lloyd/Documents/Kunai/renamer/two',
       '/Users/Lloyd/Documents/Kunai/renamer/three'
@@ -76,7 +76,7 @@ if (os.platform() === 'win32') {
   })
 
   runner.test('commonDir: hangs', function (t) {
-    var input = [
+    const input = [
       'file1.txt',
       'file1.txt'
     ]
@@ -84,7 +84,7 @@ if (os.platform() === 'win32') {
   })
 
   runner.test('commonDir: file and parent folder', function (t) {
-    var input = [
+    const input = [
       '/Users/Lloyd/Documents/Kunai/renamer/one',
       '/Users/Lloyd/Documents/Kunai/renamer'
     ]
