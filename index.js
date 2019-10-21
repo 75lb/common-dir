@@ -1,7 +1,3 @@
-'use strict'
-const commonSequence = require('common-sequence')
-const path = require('path')
-
 /**
  * @module common-dir
  */
@@ -23,11 +19,11 @@ module.exports = commonDir
  * '/Users/75lb/'
  */
 function commonDir (files) {
+  const commonSequence = require('common-sequence')
+  const path = require('path')
   return files
     .map(path.dirname)
-    .map(function (dir) {
-      return dir.split(path.sep)
-    })
+    .map(dir => dir.split(path.sep))
     .reduce(commonSequence)
     .concat([''])
     .join(path.sep)

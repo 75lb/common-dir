@@ -3,7 +3,7 @@
   "author": "Lloyd Brookes <75pound@gmail.com>",
   "version": "2.0.2",
   "description": "Returns the parent directory common to each path",
-  "repository": "https://github.com/75lb/common-dir.git",
+  "repository": "https://github.com/75lb/common-dir",
   "keywords": [
     "common",
     "directory",
@@ -12,17 +12,20 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=4"
+    "node": ">=8"
   },
   "scripts": {
     "test": "test-runner test.js",
-    "docs": "jsdoc2md -t README.hbs index.js > README.md; echo"
+    "docs": "jsdoc2md -t README.hbs index.js > README.md"
   },
   "dependencies": {
-    "common-sequence": "^1.0.2"
+    "common-sequence": "^2.0.0"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^4.0.1",
-    "test-runner": "^0.5.0"
-  }
+    "jsdoc-to-markdown": "^5.0.2",
+    "test-runner": "^0.6.0"
+  },
+  "files": [
+    "index.js"
+  ]
 }
