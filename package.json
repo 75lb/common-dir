@@ -22,8 +22,8 @@
     "common-sequence": "^2.0.0"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^5.0.2",
-    "test-runner": "^0.6.0"
+    "jsdoc-to-markdown": "^7.0.0",
+    "test-runner": "^0.6.3"
   },
   "files": [
     "index.js"

@@ -1,7 +1,8 @@
-[![view on npm](http://img.shields.io/npm/v/common-dir.svg)](https://www.npmjs.org/package/common-dir)
-[![npm module downloads](http://img.shields.io/npm/dt/common-dir.svg)](https://www.npmjs.org/package/common-dir)
+[![view on npm](https://badgen.net/npm/v/common-dir)](https://www.npmjs.org/package/common-dir)
+[![npm module downloads](https://badgen.net/npm/dt/common-dir)](https://www.npmjs.org/package/common-dir)
+[![Gihub repo dependents](https://badgen.net/github/dependents-repo/75lb/common-dir)](https://github.com/75lb/common-dir/network/dependents?dependent_type=REPOSITORY)
+[![Gihub package dependents](https://badgen.net/github/dependents-pkg/75lb/common-dir)](https://github.com/75lb/common-dir/network/dependents?dependent_type=PACKAGE)
 [![Build Status](https://travis-ci.org/75lb/common-dir.svg?branch=master)](https://travis-ci.org/75lb/common-dir)
-[![Dependency Status](https://badgen.net/david/dep/75lb/common-dir)](https://david-dm.org/75lb/common-dir)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 <a name="module_common-dir"></a>
@@ -33,4 +34,4 @@ Returns the parent directory common to each path.
 
 * * *
 
-&copy; 2014-19 Lloyd Brookes <75pound@gmail.com>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
+&copy; 2014-21 Lloyd Brookes <75pound@gmail.com>. Documented by [jsdoc-to-markdown](https://github.com/jsdoc2md/jsdoc-to-markdown).
